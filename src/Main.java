@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println("Digite um número: ");
         numero = leitor.nextInt();
-        for (int i = 1; i < numero; i++) {
+        for (int i = 1; i <= numero; i++) {
             fatorial = fatorial * i;
         }
         System.out.println("O fatorial de " + numero + " é: " + fatorial);
