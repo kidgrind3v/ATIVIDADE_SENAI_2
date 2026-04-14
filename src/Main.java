@@ -6,14 +6,16 @@ public class Main {
         int numero;
         int fatorial = 1;
 
-        Scanner leitor = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite um número: ");
-        numero = leitor.nextInt();
+        numero = sc.nextInt();
+        sc.nextLine();
+        
         for (int i = 1; i <= numero; i++) {
             fatorial = fatorial * i;
         }
         System.out.println("O fatorial de " + numero + " é: " + fatorial);
-        leitor.close();
+        sc.close();
     }
 }
